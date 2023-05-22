@@ -1,0 +1,17 @@
+version: '2'
+services:
+  dollop-server:
+    container_name: dollop-server
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: dollop-server:latest
+    ports:
+      - "127.0.0.1:18888:8888"
+    networks:
+      - spring-network
+    restart: on-failure
+
+networks:
+  spring-network:
+    driver: bridge
