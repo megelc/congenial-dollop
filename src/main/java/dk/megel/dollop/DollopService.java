@@ -14,6 +14,11 @@ public class DollopService {
 
     private final MessageSource messageSource;
 
+    /**
+     * Return an info object with respect to the locale
+     * @param locale The locale to use
+     * @return A localized info object
+     */
     public Info getInfo(Locale locale) {
         return new Info(String.format("%s %s", messageSource.getMessage("msg.info.description",null, locale), Instant.now().toString()));
     }
