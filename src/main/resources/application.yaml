@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: Dollop
+
+  profiles:
+    active: prod
+
+server:
+  port: 8888

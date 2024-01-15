@@ -11,7 +11,6 @@ import java.util.Locale;
 @Configuration
 public class I18nConfig {
 
-
     @Bean
     public LocaleResolver localeResolver() {
         SessionLocaleResolver slr = new SessionLocaleResolver();

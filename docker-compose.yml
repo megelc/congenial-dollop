@@ -11,6 +11,11 @@ services:
     networks:
       - spring-network
     restart: on-failure
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "5"
 
 networks:
   spring-network:

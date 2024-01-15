@@ -2,7 +2,7 @@ package dk.megel.dollop;
 
 import dk.megel.dollop.model.Info;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.log4j.Log4j2;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.event.EventListener;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.Locale;
 
 @RestController
-@Log4j2
+@Slf4j
 @RequiredArgsConstructor
 public class DollopController {
 
